@@ -1,0 +1,82 @@
+/*---[NAVBAR]---*/
+/*======================================*/
+.admin-bar .navbar-fixed-top {
+	margin-top: 30px;
+}
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand:hover{
+	color: $nav-hover;
+	font-weight: 600;
+	font-family: $stack-lato;
+}
+
+.navbar-inverse{
+	background-image: none;
+	background-color: $nav;
+	border-color: $nav;
+	position: fixed;
+	z-index: 2;
+}
+div.navbar.navbar-inverse.navbar-fixed-top > div > div.navbar-header > button > span.icon-bar{
+	background-color: $orange;
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover{
+	background-color: #ffffff;
+}
+
+.current-menu-item > a {
+    background: $base;
+}
+
+
+@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;		
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+
+}
+
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	color: #999;
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: $base;	
+}	
+
+.current-menu-item > a, .current-menu-parent > a {
+	background: #000;	
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	color: #fff;
+	font-weight: bold;
+}
+
+@media screen and(max-width: 768px){
+	.admin-bar .navbar-fixed-top {
+	margin-top: 45px;
+	position: fixed;
+}
+}

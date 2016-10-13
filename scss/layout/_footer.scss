@@ -1,0 +1,120 @@
+/* Footer
+-------------------------------------------------- */
+
+footer {
+	background: rgba($dark-gallery, 0.5) no-repeat center center fixed; 
+	position: relative;
+	text-align: center;
+	border-top: 2px solid rgba($gallery, 0.7);
+	padding: 100px 20px;
+	-webkit-box-shadow: inset 0px 58px 59px -13px rgba(0,0,0,0.14);
+-moz-box-shadow: inset 0px 58px 59px -13px rgba(0,0,0,0.14);
+box-shadow: inset 0px 58px 59px -13px rgba(0,0,0,0.14);
+}
+
+.copyright{
+	font-size: 10px;
+	margin: auto;
+}
+
+.sitemap iframe{
+	padding: 10px 0px;
+	//min-width: 100%;
+	//height: auto;
+}
+
+footer address{
+	position: relative;
+	vertical-align: middle;
+	margin: auto;
+	padding-top: 50px;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:#ededed;
+	padding:10px;
+}
+#content {
+	padding-bottom:0px; /* Height of the footer element */
+}
+/*#footer {
+	background:#ffab62;
+	width:100%;
+	height:300px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}*/
+
+/* Contact Form 7 Styles
+---------------------------------*/
+ 
+.wpcf7 {
+width: 100%;
+}
+
+.wpcf7-form {
+margin: 50px 25px;
+}
+
+.wpcf7 input {
+border: 2px solid #eee;
+font-size: 20px;
+font-weight: 400;
+color: #333;
+width: 50%;
+padding: 15px;
+height: 50px; 
+}
+.wpcf7-textarea {
+border: 2px solid #eee;
+font-size: 20px;
+font-weight: 400;
+color: #333;
+width: 50%;
+}
+
+
+input[type="submit"].wpcf7-submit {
+padding-bottom: 40px;
+background: #555555;
+ width: 100px;
+color: #ffffff;
+ 
+}
+
+@media screen and (max-width: 1024px){
+.wpcf7-form {
+margin: 50px 0px;
+}
+
+.wpcf7 input {
+border: 2px solid #eee;
+font-size: 20px;
+font-weight: 400;
+color: #333;
+width: 95%;
+padding: 15px;
+height: 50px; 
+}
+.wpcf7-textarea {
+border: 2px solid #eee;
+font-size: 20px;
+font-weight: 400;
+color: #333;
+width: 95%;
+}
+
+
+input[type="submit"].wpcf7-submit {
+padding-bottom: 40px;
+background: #555555;
+ width: 100px;
+color: #ffffff;
+ 
+}
+}

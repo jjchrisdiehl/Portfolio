@@ -1,0 +1,73 @@
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  > .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+/* The Sass "context" map */
+$context-font: (
+  page-header: 1.5, /* 100% */
+  full-width: 1.0, /* 67%  */
+  footer: 0.5, /* 50%  */
+  aside: 0.33 /* 33% */
+  );
+
+/* Create a step size. */
+/* This is the percentage each heading will be reduced by. */
+$step-size-heading: 0.333333;
+/* Amplifier value */
+$amplifier-heading: 1.5;
+/* The mixin */
+@mixin heading-size($size) {
+  font-size: $size * $step-size-heading * $amplifier-heading + em;
+}
+/* Create a step size. */
+/* This is the percentage each heading will be reduced by. */
+$step-size-padding: 0.16666667;
+/* Amplifier value */
+$amplifier-padding: 0.5;
+/* The mixin */
+@mixin pad-size($size) {
+  padding-top: $size * $step-size-padding * $amplifier-padding + em;
+}
+
+@each $class-name, $value in $context-font {
+  .#{$class-name} {
+    h1 {
+      @include heading-size(6);
+      @include pad-size(6);
+    }
+    h2 {
+      @include heading-size(5);
+      @include pad-size(5);
+    }
+    h3 {
+      @include heading-size(4);
+      @include pad-size(4);
+    }
+    h4 {
+      @include heading-size(3);
+      @include pad-size(3);
+    }
+    h5 {
+      @include heading-size(2);
+      @include pad-size(2);
+    }
+    h6 {
+      @include heading-size(1);
+      @include pad-size(1);
+    }
+  }
+}

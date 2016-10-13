@@ -1,0 +1,137 @@
+/* Blog
+-------------------------------------------------- */
+article.post{
+	overflow-y: hidden;
+	border-top:    0px solid #ffffff;
+	border-right:  0px solid #ffffff;
+	border-bottom: 10px solid #ca0164;
+	border-left:   0px solid #ffffff;
+	background-position:center;
+}
+.onload:hover{
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+	transform: scale(1.05); 
+	transition: all .2s ease-in-out;
+}
+article.post{
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.screen{
+	background-color: rgba(255,255,255,0.8);
+	display: block;
+	position: relative;
+	min-height: 250px;
+	padding: 20px 0px;
+}
+.screen p{
+	margin-top: 0em !important;
+	margin-bottom: 0em !important;
+}
+.odd{
+	vertical-align: middle;
+	min-height: 100%;
+	max-width: 100%;
+	height: 400px;
+	padding: 75px 0px;
+	position: relative;
+	margin-right: 100px;
+	left: -1900px;
+	border: 2px solid rgba(51,51,51,0.7);
+	background-size: 100%, cover;
+	background-repeat: no-repeat;
+    h1,h2,h3,h4,h5,h6{
+    	padding: 0px 200px;
+    	float: left;
+    }
+    p{
+    	padding: 0px 200px;
+    	float: left;
+    	clear: left;
+    }
+    hr{
+    	clear: both;
+    }
+}
+.even{
+	vertical-align: middle;
+	max-height: 100%;
+	max-width: 100%;
+	height: 400px;
+	padding: 75px 0px;
+	position: relative;
+	left: 1900px;
+	border: 2px solid rgba(51,51,51,0.7);
+	background-size: 100%, cover;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+    h1,h2,h3,h4,h5,h6{
+    	padding: 0px 200px;
+    	float: right;
+    }
+    p{
+    	padding: 0px 200px;
+    	float: right;
+    	clear: right;
+    }
+    hr{
+    	clear: both;
+    }
+}
+
+
+
+/* @MEDIA QUERIES */
+@media (max-width: 768px){
+	.screen{
+		background-color: rgba(255,255,255,0.85);
+	}
+	.odd{
+		left: 0px;
+		width: 100%;
+		h1,h2,h3,h4,h5,h6{
+			margin: auto;
+			float: none;
+			padding: 0 0 15px 15px;
+		}
+		p{
+			float: left;
+		    clear: left;
+    		padding-left: 15px;
+    		padding-right: 15px;
+    		font-size: 16px;
+    		line-height: 1.3;
+		}
+	}
+	.even{
+		right: 0px;
+		width: 100%;
+		h1,h2,h3,h4,h5,h6{
+			margin: auto;
+			float: none;
+			padding: 0 0 15px 15px;
+		}
+		p{
+			float: left;
+		    clear: left;
+    		padding-left: 15px;
+    		padding-right: 15px;
+    		font-size: 16px;
+    		line-height: 1.3;
+		}
+	}
+
+}
+
+.categories{
+	padding-left: 0px;
+    position: relative;
+}
+.categories li{
+	display: inline;
+	font-size: 16px;
+}

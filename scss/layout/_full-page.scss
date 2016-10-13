@@ -1,0 +1,28 @@
+.full-width{
+	position: relative;
+	margin-top: 25em;
+	margin-bottom: 45px;
+}
+
+@media(max-width: 1023px){
+.full-width{
+		margin-top: 0em;
+		text-align: center;
+	}
+};
+
+@media(max-width: 767px){
+	.full-width{
+		margin-top: 0em;
+		text-align: center;
+	}
+};
+
+@media(max-width: 425px){
+
+};
+
+@media(max-width: 375px){
+
+};
+

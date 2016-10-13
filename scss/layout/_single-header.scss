@@ -1,0 +1,77 @@
+/*---[HEAD WRAP]---*/
+/*======================================*/
+
+
+.mask{
+	background-color: rgba(240,173,78, 0.3);
+	z-index: 99;
+	height: 900px; 
+	box-sizing: border-box;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	
+}
+.single-header{
+	background-image: url('http://localhost/wordpress/wp-content/uploads/2016/02/IMG_7262.jpg');
+	background-repeat: repeat-x;
+	box-sizing: border-box;
+	height: 900px;
+	position: relative;
+	top: -50px;
+}
+#home-wrapper{
+	text-align: center;
+}
+.page-header{
+
+	border: none;
+	position: relative;
+	top: 70px;
+	margin-top: 80px;
+	margin-bottom: 150px;
+	display: inline-block;
+
+}
+
+@media (max-width:1199px){
+.page-header{
+	top: 70px;
+}
+}
+
+@media (max-width:960px){
+.single-header{
+	min-height: 260px; 
+}
+
+}
+@media (max-width:768px){
+.single-header{
+	min-height: 230px; 
+}
+.page-header{
+	text-align: center;
+	left: 0px;
+}
+
+}
+
+@media (max-width:460px){
+.single-header{
+	min-height: 200px; 
+}
+.page-header{
+	left: 0px;
+	text-align: center;
+}
+
+.page-header h3{
+	margin: auto;
+}
+}
+
+.content{
+	position: relative;
+	z-index: -2;
+}

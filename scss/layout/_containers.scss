@@ -1,0 +1,20 @@
+/* Responsive iFrame */
+ 
+.resp-frame {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.resp-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.sixteen-nine {
+  @include aspect-ratio(16, 9);
+}
