@@ -196,3 +196,15 @@ left: -630px;
     right: 0;
 
 }
+
+//Trail Animation
+/////////////////////////////
+.start{
+  position:absolute;
+  width: 5px;
+  height: 5px;
+  color: red;
+  z-index: 9999;
+  margin: auto;
+  top: -26em;
+}
